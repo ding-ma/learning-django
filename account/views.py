@@ -34,3 +34,8 @@ def modify_account(request):
 @api_view(['GET'])
 def login(request):
     pass
+
+
+@api_view(['GET'])
+def account_list(request):
+    pass

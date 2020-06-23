@@ -5,4 +5,5 @@ urlpatterns = [
     url(r'^api/account/signup$', views.create_account),
     url(r'^api/account/modifications$', views.modify_account),
     url(r'^api/account/login$', views.login),
+    url(r'^api/account/all', views.account_list),
 ]
