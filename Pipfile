@@ -10,6 +10,7 @@ django = "*"
 djangorestframework = "*"
 django-cors-headers = "*"
 cloudinary = "*"
+django-check-constraint = "*"
 
 [requires]
 python_version = "3.8"

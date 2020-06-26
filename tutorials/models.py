@@ -15,5 +15,6 @@ class Tutorial(models.Model):
         blank=True
     )
 
+
     def __str__(self):
         return '{}, there are ({}) users'.format(self.title, self.registered_users.all().count())
