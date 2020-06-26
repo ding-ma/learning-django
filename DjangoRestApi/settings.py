@@ -44,9 +44,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
 
-    #My Apps
+    # My Apps
     'tutorials.apps.TutorialsConfig',
     'account.apps.AccountConfig',
+    'comment.apps.CommentConfig',
 ]
 
 MIDDLEWARE = [

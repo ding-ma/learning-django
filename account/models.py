@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.utils import timezone
+from cloudinary.models import CloudinaryField
 
 
 class AccountManager(BaseUserManager):
@@ -45,6 +46,8 @@ class Account(AbstractBaseUser):
     username = models.CharField(max_length=30, unique=True)
     first_name = models.CharField(max_length=40)
     last_name = models.CharField(max_length=40)
+    photo = CloudinaryField('image', blank=True, null=True)
+
 
     # these are required for custom user model
     date_joined = models.DateField(verbose_name="date joined", auto_now_add=True)
